@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- viewport的<meta>标签，这个标签可以修改在大部分的移动设备上面的显示，为了确保适当的绘制和触屏缩放。-->
+
+<title>校园易书</title>
+
+<!--样式文件引用-->
+
+<link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+<!--[if lt IE 9]>
+
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]
+
+IE9以下的浏览器并不支持这些标签，也不能为这些标签进行添加样式。那么修复这个问题我们需要链接引用的文件
+
+意思就是说如果用户IE浏览器的版本小于IE9，那么就会加载这两个js文件库，现在就可以使用这些新的标签，并且可以在这些标签上添加样式了
+
+-->
+
+</head>
+
+<body>
+<center><h3>补充个人信息</h3></center>
+<hr>
+<form action="{:U('Userinfo/doInfo','','')}" method="post" name="form0">
+联系方式：
+    <input name="user_connect" type="text" size="15"/>
+<hr>
+用户邮箱：
+    <input name="user_mail" type="email"/>
+<hr>
+<div class="control-group">
+              用户专业：<select name="user_department" class="controls"  type="text" >
+               <option value="马克思主义">马克思主义</option>
+               <option value="经济与工商管理">经济与工商管理</option>
+               <option value="法学">法学</option>
+               <option value="社会学">社会学</option>
+               <option value="教育学">教育学</option>
+               <option value="信息技术与管理">信息技术与管理</option>
+               <option value="体育">体育</option>
+               <option value="文学">文学</option>
+               <option value="新闻学">新闻学</option>
+               <option value="外语">外语</option>
+               <option value="历史">历史</option>
+               <option value="数学">数学</option>
+               <option value="物理学">物理学</option>
+               <option value="化学">化学</option>
+    		   <option value="生物学">生物学</option>
+        	   <option value="城市与环境">城市与环境</option>
+               <option value="心理学">心理学</option>
+               <option value="计算机">计算机</option>
+               <option value="公共管理">公共管理</option>
+               <option value="音乐">音乐</option>
+               <option value="美术">美术</option>
+               <option value="国际交流">国际交流</option>
+    		   <option value="其他">其他</option>
+               </select>
+</div>  
+<hr>
+<center><input class="btn btn-info" type="submit" value="提交"></center>
+</form>
+    
+<hr>
+
+<!--JavaScript插件都是依赖与jQuery库-->
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<script type="text/javascript" src="__PUBLIC__/js/jquery-2.2.1.min.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
